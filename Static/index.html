@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Web Crawler</title>
@@ -13,5 +13,39 @@
         <input type="submit" value="Crawl">
     </form>
     <div id="result"></div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>URL and Payment Status</title>
+</head>
+<body>
+    <div class="container">
+        <h1>WEB CRAWLER</h1>
+        <form id="urlForm" method="post" action="/crawl">
+            <div class="form-group">
+                <!-- <label for="urlInput">Enter URL:</label> -->
+                <input type="url" id="urlInput" name="url" placeholder="type a URL" required>
+            </div>
+            <div class="form-group">
+                <label>Payment Status:</label>
+                <div class="radio-group">
+                    <input type="radio" id="paid" name="pay" value="paid">
+                    <label for="paid">Paid</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="non-paid" name="pay" value="non-paid">
+                    <label for="non-paid">Non-Paid</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

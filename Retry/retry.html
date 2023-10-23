@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retry Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retry</h1>
+    <p>There was an issue processing your request. Please try again.</p>
+    <form method="post">
+        <input type="hidden" name="url" value="{{.URL}}">
+        <input type="hidden" name="pay" value="{{.PayingStatus}}">
+        <input type="submit" value="Retry">
+    </form>
+</body>
+</html>
