@@ -13,6 +13,7 @@ var (
 	oldPagetime         = 60 // in minutes
 )
 
+// This function have all the endpoint of this site
 func setupAPIEndpoints() {
 	http.HandleFunc("/numWorkers", endpoint.NumWorkersHandler)
 	http.HandleFunc("/speedPerHour", endpoint.SpeedPerHourHandler)

@@ -70,7 +70,7 @@ func crawler(url string, w http.ResponseWriter) {
 	/* This code busy this function for 60s
 	This line of code not for development this is only used in testing phase
 	*/
-	timeout := time.After(1 * 60 * time.Second)
+	timeout := time.After(1 * 25 * time.Second)
 	<-timeout
 }
 

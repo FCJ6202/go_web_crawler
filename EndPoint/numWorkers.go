@@ -6,6 +6,9 @@ import (
 	"strconv"
 )
 
+// It calls when admin give post or get request in /numWorkers endpoint.
+// In get request admin will see the currently number of worker work in this system.
+// In post request admin will be able to edit the number of worker in this system.
 func NumWorkersHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		numWorkersStr := r.FormValue("workers")

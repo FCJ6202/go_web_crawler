@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// This function will call when user be not be able to get the page after clicking crawl button
 func RetryPage(w http.ResponseWriter, URL, payingStatus string) {
 	tmpl, err := template.ParseFiles("Retry/retry.html")
 	if err != nil {
