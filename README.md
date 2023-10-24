@@ -23,3 +23,6 @@ go run main.go
 
 ### High level Design
 - drive link:- https://drive.google.com/file/d/1F7416viLlUJLeoldWbWZz5c_hWd8ysrZ/view?usp=sharing
+
+### Video
+- drive link:- https://drive.google.com/drive/folders/1uAwmPk6SMI1aF1hSpcrst9E-4uN7UMMR?usp=sharing
